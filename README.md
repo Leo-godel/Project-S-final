@@ -12,6 +12,9 @@ celestial bodies and the moon phase.<br>
 Our results can be used to further study and predict both solar and lunar eclipse phenomena since we
 can accurately predict the time evolution curve of the sun’s and the moon’s position on the sky. That
 will be an interesting work for us in the future.<br>
+## Data
+The dataset includes both the data we generated in the early project and this time.<br>
+
 ## Authors
 * Zheyu Lu   
 * Rui Liu   
