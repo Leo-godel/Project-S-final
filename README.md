@@ -1,5 +1,7 @@
 # Project-S-final
 This is our Project-S-Final package.<br>
+
+## Introduction
 We create a fictional binary star solar system which has two suns, one Earth and one moon. In our
 early project, we generate our data by using SpaceEngine and OCR. This time, however, we come up
 with a new method to generate the altitude and azimuth data of the celestial bodies by analytically
