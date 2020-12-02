@@ -33,6 +33,11 @@ Since Asin(wx+c)+B is just a simple observation and the true function may contai
 After the gradient decent step, we construct a series of features like sin(wx) and cos(wx). Then, we do polynomial regression on them.
 
 ### final_location
+From EDA and the observation of the data, we find the altitude is like a composition of two sin function( A1sin(w1x+c1)+ A2sin(w2x+c2) + B )
+Since learning the altitude and azimuth need a lot of data and gradient decent needs huge computation, our computers cannot finish enough iterations.<br>
+We use the function of fit in matlab to replace gradient decent in this part. <br>
+After using matlab to get w1 and w2, we generate a series of features like sin(w1x), cos(w1x), sin(w2x) and cos(w2x). Then, as the previous part, we do polynomial regression.
+
 ## Authors
 * Zheyu Lu   
 * Rui Liu   
