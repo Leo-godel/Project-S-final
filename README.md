@@ -5,10 +5,10 @@ with a new method to generate the altitude and azimuth data of the celestial bod
 solving our model which generalized and simplified our previous method. Our current method can
 be used to quickly generate observation data from an arbitrary position on Earth. Combining the
 two methods can provide us with abundant data for learning the orbital motion and positions of the
-celestial bodies and the moon phase.
+celestial bodies and the moon phase.<br>
 Our results can be used to further study and predict both solar and lunar eclipse phenomena since we
 can accurately predict the time evolution curve of the sun’s and the moon’s position on the sky. That
-will be an interesting work for us in the future.
+will be an interesting work for us in the future.<br>
 The paper is organized as follows: In Section 2, we firstly introduce data generation in Section
 2.1 which includes the two different methods we used to generate our data and we also verify the
 consistency between using the two methods. For the second method, we also introduce the theory
