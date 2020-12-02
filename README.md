@@ -25,8 +25,14 @@ we apply another method: simulation. By physical derivation, we analytically dra
 Thus, we can generate as many data points as we want.
 
 ## Training
-### Moon phase
-### 
+### final_phase
+From EDA and the observation of the data, we find the moon phase data is like a signle sin function( Asin(wx+c)+B ).<br>
+Based on this assumption, we first guess the initial function. After that, we use a two-step way to fine-tune the parameters.<br>
+First, we use gradient decent to fine-tune our parameters of the function. This step is intended to find the best w.<br>
+Since Asin(wx+c)+B is just a simple observation and the true function may contain other high order terms, just gradient decent is not enough.<br>
+After the gradient decent step, we construct a series of features like sin(wx) and cos(wx). Then, we do polynomial regression on them.
+
+### final_location
 ## Authors
 * Zheyu Lu   
 * Rui Liu   
