@@ -24,6 +24,9 @@ that data is not enough for training azimuth and latitude. In order to train the
 we apply another method: simulation. By physical derivation, we analytically draw the model in Space Engine.
 Thus, we can generate as many data points as we want.
 
+## Training
+### Moon phase
+### 
 ## Authors
 * Zheyu Lu   
 * Rui Liu   
