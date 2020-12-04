@@ -27,11 +27,18 @@ From EDA and the observation of the data, we find the moon phase data is like a 
 Since Asin(wx+c)+B is just a simple observation and the true function may contain other high order terms, just gradient decent is not enough.
 After the gradient decent step, we construct a series of features like sin(wx) and cos(wx). Then, we do polynomial regression on them.
 
-### final_location
+### final_altitude
 From EDA and the observation of the data, we find the altitude is like a composition of two sin function( A1sin(w1x+c1)+ A2sin(w2x+c2) + B )
 Since learning the altitude and azimuth need a lot of data and gradient decent needs huge computation, our computers cannot finish enough iterations.
 We use the function of fit in matlab to replace gradient decent in this part. 
 After using matlab to get w1 and w2, we generate a series of features like sin(w1x), cos(w1x), sin(w2x) and cos(w2x). Then, as the previous part, we do polynomial regression.
+
+### final_azimuth
+Just from EDA and observation of the data, we cannot simply draw the function type of azimuth.
+So, we try to use fourier features to fit the azimuth data.
+First, we make the assumption that the basic frequency should be around 727, just like one frequency we find in altitude part.
+Then, we fix the number of fourier features and use grid search method to fine-tune the basic frequency w.
+Finally, we use the best w in previous step and gird search the best number of fourier features to get the final model.
 
 ## Authors
 * Zheyu Lu   
