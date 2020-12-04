@@ -19,7 +19,7 @@ The follwing part briefly explains two methods. Data and its format can be found
 ### SpaceEngine & OCR
 We first input the approximated trajectories into SpaceEngine. Then we chose three locations on Earth-Berkeley, Shanghai and Sydney, to generate screenshots which include measurables. Finally we use OCR to recognize numbers and store them in csv files. 
 ### Simulation
-We first generated trajectories of all celestial bodies' coordinates in a cartesian coordinate system whose origin is the center-of-mass of the two suns. Then we used rotation matrix to transform the coordinates to altitude and azimuth in observer's topocentric coordinate system. Mathematical details can be found [HERE](https://github.com/Leo-godel/Project-S-final/blob/main/Final_writeup.pdf).
+We first generated trajectories of all celestial bodies' coordinates in a cartesian coordinate system whose origin is the center-of-mass of the two suns. Then we used rotation matrix to transform the coordinates to altitude and azimuth in observer's topocentric coordinate system. Mathematical details can be found [HERE](https://github.com/Leo-godel/Project-S-final/blob/main/writeup/Final_writeup.pdf).
 
 ## Training
 ### final_phase
