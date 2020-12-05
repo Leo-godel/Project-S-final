@@ -23,7 +23,11 @@ We first generated trajectories of all celestial bodies' coordinates in a cartes
 
 ## Training
 ### final_phase
-From EDA and the observation of the data, we find the moon phase data is like a signle sinusoidal function( Asin(wx+c)+B ). Based on this assumption, we first guess the initial function. After that, we use a two-step way to fine-tune the parameters. First, we use gradient decent to fine-tune our parameters of the function. This step is intended to find the best w.
+From EDA and the observation of the data, we find the moon phase data is like a signle sinusoidal function:
+<p align="center">
+  <img src="https://github.com/Leo-godel/Project-S-final/blob/media/phase_formula.png?raw=true", width="100px">
+</p>
+Based on this assumption, we first guess the initial function. After that, we use a two-step way to fine-tune the parameters. First, we use gradient decent to fine-tune our parameters of the function. This step is intended to find the best w.
 Since Asin(wx+c)+B is just a simple observation and the true function may contain other high order terms, just gradient decent is not enough.
 After the gradient decent step, we construct a series of features like sin(wx) and cos(wx). Then, we do polynomial regression on them.
 
@@ -33,10 +37,13 @@ After the gradient decent step, we construct a series of features like sin(wx) a
 </p>
 
 ### final_altitude
-From EDA and the observation of the data, we find the altitude is like a composition of two sin function( A1sin(w1x+c1)+ A2sin(w2x+c2) + B )
+From EDA and the observation of the data, we find the altitude is like a combination of two sin function:
+<p align="center">
+  <img src="https://github.com/Leo-godel/Project-S-final/blob/media/altitude_formula.png?raw=true", width="280px">
+</p>
 Since learning the altitude and azimuth need a lot of data and gradient decent needs huge computation, our computers cannot finish enough iterations.
 We use the function of fit in matlab to replace gradient decent in this part. 
-After using matlab to get w1 and w2, we generate a series of features like sin(w1x), cos(w1x), sin(w2x) and cos(w2x). Then, as the previous part, we do polynomial regression.
+After using matlab to get w1 and w2, we generate a series of features like sin(w1*t), cos(w1*t), sin(w2*t) and cos(w2*t). Then, as the previous part, we do polynomial regression.
 
 <strong>Result: </strong>
 <p align="center">
